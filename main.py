@@ -4,7 +4,6 @@ from st_timeline import st_timeline
 import plotly.express as px
 import connections_graph
 
-
 st.title("Lockdown and & Diabetes")
 st.header("Introduction")
 st.markdown(
@@ -17,7 +16,7 @@ st.markdown(
 
 st.header("Research Question")
 st.markdown("""
-To what extent did lockdown during Covid-19 (2019-2023) affect the prevalence and deaths from Diabetes in Singapore?
+To what extent did lockdown during Covid - 19 (2019-2023)  and the Singaporean government’s response affect the prevalence of Diabetes (1 & 2) in Singapore?
 """)
 
 st.header("Background Data")
@@ -227,14 +226,19 @@ with tab3:
         Paying for the treatment of their disease adds extra financial strain upon DM patients. In countries where such treatments are subsidised (very few), the government still has to pay for such treatments. Both ways, DM has direct negative economic effects.
         """
     )
-st.header("Systems Graph")
+st.header("System's Graph")
+st.markdown(
+    """
+    This a systems graph, which represents the elements surrounding the pandemic and DM patients. Mouse over a node / connection to see how it affects / is affected by other nodes.
+
+    *:red[Red] = Negative, :green[Green] = Positive*
+    """
+)
+st.header("Answer to RQ")
 st.markdown(
     """
     Diabetes Type-2 is caused and affected by lifestyle choices such as healthy food and exercise. The Circuit - Breaker / Lockdown measures made during the pandemic significantly restricted people's access to the outdoors, forcing them to stay at home, leading to a more sedintary lifestyle. Furthermore, the pressure placed upon healthcare systems by the pandemic often made medication less accesible. Both forms of diabetes require long-term treatment, and a discrupted healthcare system could cause disruptions in the level of care provided to diabetes patients. There is also some evidence that Covid-19 affects Diabetes patients in more acute ways.
-    The widespread effects of Covid-19 on the healthcare system have been widely documented. A paper written by medical scientists at Beijing's China Academy of Chinese Medical Sciences discusses the interplay between Diabetes and Covid-19. They presented evidence for 
-     is a systems graph, which represents these elements. Mouse over a node / connection to see how it affects / is affected by other nodes.
-
-    *:red[Red] = Negative, :green[Green] = Positive*
+    The widespread effects of Covid-19 on the healthcare system have been widely documented. A paper written by medical scientists at Beijing's China Academy of Chinese Medical Sciences discusses the interplay between Diabetes and Covid-19. The paper agreed that the pandemic had significant negative affects on DM pateitns, not just because of Covid - 19 having worse effects on DM patients, but also the circuit breaker policies. 
     """
 )
 
