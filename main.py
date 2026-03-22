@@ -4,6 +4,7 @@ from st_timeline import st_timeline
 import plotly.express as px
 import connections_graph
 
+
 st.title("Lockdown and & Diabetes")
 st.header("Introduction")
 st.markdown(
