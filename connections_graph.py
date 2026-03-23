@@ -33,7 +33,7 @@ _obsidian_json = {
         {
             "id": "dde9d64a500477d7",
             "type": "text",
-            "text": "Lockdown measures",
+            "text": "Circuit Breaker",
             "x": -500,
             "y": -30,
             "width": 250,
