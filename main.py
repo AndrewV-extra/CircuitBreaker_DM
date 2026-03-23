@@ -130,6 +130,10 @@ st.markdown(
     "*Source: **Our World In Data**. Click [here](#bibliography) to view the bibliography.*"
 )
 st.write("")
+st.markdown("""
+As we can see from the 2 graphs above, global DM rates have mostly stayed the same over time, but spiked massively during 2020.
+""")
+st.write("")
 
 st.header("Covid-19 Timeline")
 my_events = [
