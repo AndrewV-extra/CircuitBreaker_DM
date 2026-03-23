@@ -6,7 +6,7 @@ _obsidian_json = {
         {
             "id": "ab1b91cc17a26257",
             "type": "text",
-            "text": "Covid-19",
+            "text": ":green-badge[Covid-19]",
             "x": -125,
             "y": -30,
             "width": 250,
