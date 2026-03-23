@@ -248,12 +248,27 @@ st.header("Bibliography")
 
 st.markdown(
     """
-- [Global Death from Diabetes, Our World In Data](https://ourworldindata.org/grapher/deaths-from-diabetes-ghe?time=2000..latest&country=RUS~CHN~USA~BRA~OWID_WRL)
-- [Covid-19 Timeline, Center for Disease Control](https://www.cdc.gov/museum/timeline/covid19.html)
-- [Diabetes prevalence in Singapore, Data.gov.sg](https://data.gov.sg/datasets?query=diabetes&resultId=d_711586488b23182801c94bd7b6807833)
-- [Progression of Covid-19 in Singapore, CNA](https://www.channelnewsasia.com/singapore/singapore-covid-19-outbreak-evolved-coronavirus-deaths-timeline-764126)
-- [Contact tracing in Singapore, global-is-asian](https://lkyspp.nus.edu.sg/gia/article/tracetogether-questions-of-data-and-privacy)
-- [Active Enablers program, Straits Times](https://www.straitstimes.com/sport/coronavirus-active-enabler-programme-offering-2-million-grant-to-get-singaporeans-active)
-
+"CDC Museum Covid-19 Timeline." David J. Sencer CDC Museum, 8 July 2024, www.cdc.gov/museum/timeline/ 
+     covid19.html. Accessed 23 Mar. 2026. 
+"Deaths from Diabetes." _Our World in Data_, 30 July 2024, ourworldindata.org/grapher/ 
+     deaths-from-diabetes-ghe?time=2000..latest&country=RUS~CHN~USA~BRA~OWID_WRL. Accessed 23 Mar. 
+     2026. 
+Lee, David. "Coronavirus: Active Enabler Programme offers total $2 million in grants to get 
+     Singaporeans active." _The Straits Times_, 8 Apr. 2020, www.straitstimes.com/sport/ 
+     coronavirus-active-enabler-programme-offering-2-million-grant-to-get-singaporeans-active. 
+     Accessed 23 Mar. 2026. 
+"Prevalence Of Overweight, Obesity, Daily Smoking, Hypertension, Diabetes Mellitus, Hyperlipidaemia, 
+     Sufficient Total Physical Activity And Binge Drinking Among Residents Aged 18-74 Years." 
+     _data.gov.sg_, 24 Oct. 2024, data.gov.sg/ 
+     datasets?query=diabetes&resultId=d_711586488b23182801c94bd7b6807833. Accessed 23 Mar. 2026. 
+"TraceTogether app - Contact-tracing system in Singapore." _Global Is Asian_, 16 Feb. 2021, 
+     lkyspp.nus.edu.sg/gia/article/tracetogether-questions-of-data-and-privacy. Accessed 23 Mar. 
+     2026. 
+Yong, Michael. "Timeline: How the COVID-19 outbreak has evolved in Singapore so far." _Channel News 
+     Asia_, 3 Feb. 2021, www.channelnewsasia.com/singapore/ 
+     singapore-covid-19-outbreak-evolved-coronavirus-deaths-timeline-764126. Accessed 23 Mar. 2026. 
+Zhao, Xuefei et al. "Understanding the interplay between COVID-19 and diabetes: insights for the 
+     post-pandemic era." Frontiers in endocrinology vol. 16 1599969. 21 May. 2025, doi:10.3389/ 
+     fendo.2025.1599969 
 """
 )
