@@ -66,6 +66,16 @@ _obsidian_json = {
             "width": 250,
             "height": 60,
         },
+        # ✅ New node
+        {
+            "id": "active_sg_circle",
+            "type": "text",
+            "text": "Active SG Circle",
+            "x": -880,
+            "y": 120,
+            "width": 250,
+            "height": 60,
+        },
     ],
     "edges": [
         {
@@ -140,6 +150,15 @@ _obsidian_json = {
             "toSide": "right",
             "label": "+",
         },
+        # ✅ New edge (green on hover)
+        {
+            "id": "edge_active_sg",
+            "fromNode": "active_sg_circle",
+            "fromSide": "right",
+            "toNode": "44c93b01890ae2f6",
+            "toSide": "left",
+            "label": "+",
+        },
     ],
 }
 
@@ -150,29 +169,28 @@ def render(height=350):
     edges = []
 
     # Streamlit & Obsidian Hybrid Styling
-    STREAMLIT_SECONDARY_BG = "#262730"  # Streamlit's dark-mode card background
-    STREAMLIT_BORDER = "#4B4C53"  # Subtle grey border
-    STREAMLIT_PRIMARY = "#FF4B4B"  # Streamlit's signature pink/red
-    TEXT_COLOR = "#FAFAFA"  # Off-white text
+    STREAMLIT_SECONDARY_BG = "#262730"
+    STREAMLIT_BORDER = "#4B4C53"
+    STREAMLIT_PRIMARY = "#FF4B4B"
+    TEXT_COLOR = "#FAFAFA"
 
     # Highlight Colors for +/- edges
-    COLOR_POSITIVE = "#21c354"  # Green
-    COLOR_NEGATIVE = "#FF4B4B"  # Red
+    COLOR_POSITIVE = "#21c354"
+    COLOR_NEGATIVE = "#FF4B4B"
 
-    # 1. Convert Nodes
+    # Convert Nodes
     for n in _obsidian_json["nodes"]:
         nodes.append(
             Node(
                 id=n["id"],
                 label=n["text"],
-                title="",  # Setting title to an empty string hides the alphanumeric ID tooltip
+                title="",
                 shape="box",
                 x=n["x"],
                 y=n["y"],
-                # Obsidian card dimensions
                 widthConstraint={"minimum": 200, "maximum": 250},
-                margin=15,  # Padding inside the box
-                shapeProperties={"borderRadius": 8},  # Smooth rounded corners
+                margin=15,
+                shapeProperties={"borderRadius": 8},
                 color={
                     "background": STREAMLIT_SECONDARY_BG,
                     "border": STREAMLIT_BORDER,
@@ -182,16 +200,15 @@ def render(height=350):
                     },
                     "hover": {
                         "background": "#343540",
-                        "border": "#343540",  # Outlines the node in white on mouseover
+                        "border": "#343540",
                     },
                 },
                 font={"color": TEXT_COLOR, "face": "sans-serif", "size": 14},
             )
         )
 
-    # 2. Convert Edges
+    # Convert Edges
     for e in _obsidian_json["edges"]:
-        # Check the logic of the edge for coloring, but don't show the label
         edge_label = e.get("label", "")
         if edge_label == "+":
             interaction_color = COLOR_POSITIVE
@@ -204,29 +221,27 @@ def render(height=350):
             Edge(
                 source=e["fromNode"],
                 target=e["toNode"],
-                # Removed the label property here to hide the notes
-                arrows="to",  # Adds arrows to the end of the line
+                arrows="to",
                 width=2,
-                # Smooth Bezier curves (Obsidian connection style)
                 smooth={"type": "cubicBezier", "roundness": 0.5},
                 color={
-                    "color": "#808495",  # Streamlit subtle grey
-                    "highlight": interaction_color,  # Highlights green (+) or red (-) on click
-                    "hover": interaction_color,  # Optional: also colorize on hover
+                    "color": "#808495",
+                    "highlight": interaction_color,
+                    "hover": interaction_color,
                 },
             )
         )
 
-    # 3. Configure Graph Settings
+    # Graph Config
     config = Config(
         width="100%",
         height=height,
         directed=True,
-        physics=False,  # Lock to exact Obsidian layout coordinates
+        physics=False,
         hierarchical=False,
         interaction={
-            "hover": True,  # Enable hover effects configured above
-            "selectConnectedEdges": True,  # Ensures connecting lines highlight when a node is clicked!
+            "hover": True,
+            "selectConnectedEdges": True,
             "zoomView": True,
             "dragView": True,
         },
