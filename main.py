@@ -258,7 +258,7 @@ st.markdown(
      covid19.html. Accessed 23 Mar. 2026. 
      
 "Deaths from Diabetes." _Our World in Data_, 30 July 2024, ourworldindata.org/grapher/ 
-     deaths-from-diabetes-ghe?time=2000..latest&country=RUS~CHN~USA~BRA~OWID_WRL. Accessed 23 Mar. 
+     deaths-from-diabetes-ghe?time=2000..latest&country=RUS\~CHN~USA\~BRA\~OWID_WRL. Accessed 23 Mar. 
      2026. 
      
 Lee, David. "Coronavirus: Active Enabler Programme offers total $2 million in grants to get 
