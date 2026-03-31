@@ -240,12 +240,25 @@ st.markdown(
     """
 )
 connections_graph.render()
-
+st.header("Covid - 19 and DM Link")
+st.markdown(
+    """
+    The map and graph seen in the prevalence section above, suggest a correlation between DM and Covid-19, but don’t provide any proof of causation between the two. For this, I found a paper written by medical scientists at Beijing's Academy of Chinese Medical Sciences that discusses the interplay between Diabetes and Covid-19. It presents a lot of evidence linking the two diseases, which I’ve summarised into two sections. 
+    
+    ## DM Patient’s conditions worsened by covid 19
+    Covid - 19 directly worsens glycemic control (how well the body regulates glucose in the body) in diabetes patients, which can significantly disrupt their treatment and welfare. Poor glycemic control after being infected from covid - 19 has been observed in both Type 1 and Type 2 patients. Additionally, treatments for severe covid-19 are known to disrupt glucose and insulin levels in the body, thus worsening the conditions of DM patients. 
+    
+    ## Covid - 19 Patients are more susceptible to developing DM
+    A study involving 47.1 million participants showed that patients who had previously been afflicted by covild-19 were more than 64% more likely to develop diabetes. In addition, another study that monitored 81,280 individuals who had been inflicted by covid 19 over 352 days found similar results - that they were much more susceptible to developing DM. 
+    
+    Outside of the paper, it can also be inferred that the sedentary lifestyle brought along by circuit breaker policies world- and nation-wide, directly contributed to the rate at which people developed diabetes type 2, as such a lifestyle has been directly linked to the disease. 
+    """
+)
 st.header("Answer to RQ")
 st.markdown(
     """
     Both forms of DM are widely prevalent globally. Until the Pandemic, the prevalence of both mostly stayed the same (indcreasing and decreasing slightly year by year), but spiked drastically during the Pandemic. Diabetes Type-2 is caused and affected by lifestyle choices such as healthy food and exercise. The Circuit - Breaker / Lockdown measures made during the pandemic significantly restricted people's access to the outdoors, forcing them to stay at home, leading to a more sedintary lifestyle. Furthermore, the pressure placed upon healthcare systems by the pandemic often made medication less accesible. Both forms of diabetes require long-term treatment, and a discrupted healthcare system could cause disruptions in the level of care provided to diabetes patients. There is also some evidence that Covid-19 affects Diabetes patients in more acute ways.
-    The widespread effects of Covid-19 on the healthcare system have been widely documented. A paper written by medical scientists at Beijing's China Academy of Chinese Medical Sciences discusses the interplay between Diabetes and Covid-19. The paper agreed that the pandemic had significant negative affects on DM pateitns, not just because of Covid - 19 having worse effects on DM patients, but also the circuit breaker policies. 
+    The widespread effects of Covid-19 on the healthcare system have been widely documented. A paper written by medical scientists at Beijing's China Academy of Chinese Medical Sciences discusses the interplay between Diabetes and Covid-19. The paper agreed that the pandemic had significant negative affects on DM pateitns, not just because of Covid - 19 having worse effects on DM patients, but also the circuit breaker policies. Out of the evidence presented in the 
     """
 )
 
