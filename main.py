@@ -47,7 +47,11 @@ fig = px.scatter(
 
 st.plotly_chart(fig, use_container_width=True)
 st.markdown(
-    "*Source: **data.gov.sg**. Click [here](#bibliography) to view the bibliography.*"
+    """
+    *Source: **data.gov.sg**. Click [here](#bibliography) to view the bibliography.*
+
+    This graph shows the prevalence of diabetes in Singapore from 2010 to 2022. Without detailed analysis, a large spike is very visible in 2020. Specifically, prevalence spiked from 8.8% in 2017 to 9.5% in 2020, and back down to 8.5% in 2022. 
+    """
 )
 st.write("")
 
@@ -127,7 +131,19 @@ fig_map.update_layout(
 # Display the map in Streamlit
 st.plotly_chart(fig_map, use_container_width=True, theme="streamlit")
 st.markdown(
-    "*Source: **Our World In Data**. Click [here](#bibliography) to view the bibliography.*"
+    """
+    *Source: **Our World In Data**. Click [here](#bibliography) to view the bibliography.*
+
+    The map shows how dm - caused deaths globally have changed from 2000 - 2021, which spikes heavily in 2019 - 2020. 
+
+    To reduce the effect of small data discrepancies, I will analyse the data from 3 countries with large populations:
+    
+    1) **China** went from ~104k deaths in 2000, to ~136k in 2010, to ~172k in 2020
+    2) **Russia** went from ~10k deaths in 2000, to ~8k in 2010, to ~34k in 2020
+    3) **USA** went from ~57k deaths in 2000, to ~51k in 2010, to ~60k in 2020
+    
+    **China’s** DM deaths increased linearly and weren't too affected by Covid -19. **Russia** and the **USA** were both on downward trends in DM deaths, until 2020, where deaths suddenly spiked. 
+    """
 )
 st.write("")
 st.markdown("""
